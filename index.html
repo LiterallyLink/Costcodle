@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costcodle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="howToPlayBtn" class="help-button">?</button>
+
+    <div class="game-container">
+        <div class="header">COSTCODLE</div>
+        <div id="productCard" class="product-card">
+        </div>
+        <div id="gameStatus"></div>
+        <form id="guessForm" class="guess-form">
+            <input 
+                type="number" 
+                id="guessInput" 
+                class="guess-input" 
+                step="0.01" 
+                placeholder="$0.00" 
+                required
+            >
+            <button type="submit" class="guess-button">Guess</button>
+        </form>
+        <div id="guessList" class="guess-list">
+        </div>
+    </div>
+    <div id="howToPlayModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>HOW TO PLAY</h2>
+            </div>
+            <div class="modal-body">
+                <div class="section">
+                    <p>Guess the <span class="highlight">COSTCODLE</span> in 6 tries.</p>
+                    <ul>
+                        <li>Each guess must be a valid price.</li>
+                        <li>Incorrect guesses will help guide you to the target price.</li>
+                    </ul>
+                    <p>If you guess within 5% of the target price, you win!</p>
+                </div>
+                
+                <div class="section">
+                    <h3>Examples</h3>
+                    <div class="example-guess">
+                        <div class="guess-item">
+                            <span>$10.00</span>
+                            <span class="red">↑↑</span>
+                        </div>
+                        <p>First guess of $10.00 is low by more than 25% of the target price.</p>
+                    </div>
+                    
+                    <div class="example-guess">
+                        <div class="guess-item">
+                            <span>$18.00</span>
+                            <span class="yellow">↓</span>
+                        </div>
+                        <p>Next guess of $18.00 is too high but within 25% of the target price.</p>
+                    </div>
+                    
+                    <div class="example-guess">
+                        <div class="guess-item">
+                            <span>$16.00</span>
+                            <span class="green">✓</span>
+                        </div>
+                        <p>The guess of $16.00 was within 5% of the target price! You win!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

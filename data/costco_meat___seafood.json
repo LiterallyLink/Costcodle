@@ -1,0 +1,611 @@
+{
+  "link": "https://costcofdb.com/product-category/meat-seafood",
+  "products": [],
+  "subcategories": {
+    "Beef": {
+      "link": "https://costcofdb.com/product-category/meat-seafood/beef",
+      "products": [
+        {
+          "name": "Certified Angus Beef Carne Asada",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/certified-angus-beef-carne-asada-300x300.jpg"
+        },
+        {
+          "name": "Florida Raised Grass Fed Raw Beef 3-1 lb",
+          "price": "$17.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/florida-raised-grass-fed-raw-beef-3-1-lb-1-300x300.jpg"
+        },
+        {
+          "name": "Great Range Ground Bison 90% Lean, 2 X 1.25 lbs",
+          "price": "$19.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/great-range-ground-bison-90-lean-2-x-1-25-lbs-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Beef Loin New York (Shabu Shabu)",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-beef-loin-new-york-shabu-shabu-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Beef Ox Tail",
+          "price": "$9.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-beef-ox-tail-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Beef Round Top Round Roast Boneless",
+          "price": "$5.59",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-beef-round-top-round-roast-boneless-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Ground Beef 88% Lean / 12% Fat",
+          "price": "$3.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-ground-beef-88-lean-12-fat-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Organic Ground Beef, 4 lbs",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-organic-ground-beef-4-lbs-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Back Ribs",
+          "price": "$3.69",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-back-ribs-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Brisket",
+          "price": "$3.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-brisket-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Chuck Short Rib Bone-In Sliced",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-chuck-short-rib-bone-in-sliced-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Chuck Short Ribs Boneless",
+          "price": "$14.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-chuck-short-ribs-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Chuck Steak Boneless",
+          "price": "$5.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-chuck-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Eye Round Roast",
+          "price": "$4.69",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-eye-round-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Flank Steak",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-flank-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef for Stew",
+          "price": "$6.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-for-stew-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin New York Steak Boneless",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-new-york-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Tenderloin Peeled Extreme",
+          "price": "$22.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-tenderloin-peeled-extreme-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Tenderloin Steak – Filet Mignon",
+          "price": "$21.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-tenderloin-steak-filet-mignon-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Tip Steak (Flap Meat)",
+          "price": "$10.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-tip-steak-flap-meat-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Top Loin Whole (New York)",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-top-loin-whole-new-york-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Top Sirloin Cap Steak Boneless",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-top-sirloin-cap-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Top Sirloin Steak Boneless Cap Off",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-top-sirloin-steak-boneless-cap-off-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Loin Tri Tip Roast",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-loin-tri-tip-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Plate Short Rib",
+          "price": "$7.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-plate-short-rib-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Ribeye Roast Boneless",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-ribeye-roast-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Ribeye Steak Boneless",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-ribeye-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Ribeye Steak Boneless, Thin Cut",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-ribeye-steak-boneless-thin-cut-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Ribeye Whole Boneless",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-ribeye-whole-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Round Steak Steak",
+          "price": "$5.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-round-steak-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Beef Skirt Steaks",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-beef-skirt-steaks-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Seasoned Tri-Tip",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-seasoned-tri-tip-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Standing Rib Roast Bone In (Full)",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-standing-rib-roast-bone-in-full-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Choice Standing Rib Roast Bone In (Half)",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-choice-standing-rib-roast-bone-in-half-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Chuck Roast",
+          "price": "$5.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-chuck-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Ribeye Cap Steak",
+          "price": "$26.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-ribeye-cap-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Ribeye Steak",
+          "price": "$19.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-ribeye-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Brisket",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-brisket-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Chuck Short Ribs Boneless",
+          "price": "$14.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-chuck-short-ribs-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin New York Steak",
+          "price": "$17.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-new-york-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tenderloin Peeled Extreme",
+          "price": "$34.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tenderloin-peeled-extreme-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tenderloin Steak",
+          "price": "$28.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tenderloin-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Top Sirloin Cap Steak Boneless",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-top-sirloin-cap-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Top Sirloin Steak Boneless Cap Off",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-top-sirloin-steak-boneless-cap-off-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tri Tip Roast",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tri-tip-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Ribeye Roast, Boneless",
+          "price": "$23.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-ribeye-roast-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Ribeye Steak Boneless",
+          "price": "$27.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-ribeye-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Pre 100% Grass Fed Petite Sirloin Steaks 4-5 oz",
+          "price": "$16.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/pre-100-grass-fed-petite-sirloin-steaks-4-5-oz-300x300.jpg"
+        }
+      ]
+    },
+    "Pork & Lamb": {
+      "link": "https://costcofdb.com/product-category/meat-seafood/pork-lamb",
+      "products": [
+        {
+          "name": "Fra’ Mani Tuscan Pork Rib Roast",
+          "price": "$45.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/fra-mani-tuscan-pork-rib-roast-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Boneless Lamb Leg, Australia",
+          "price": "$5.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-boneless-lamb-leg-australia-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Frenched Lamb Rack",
+          "price": "$12.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-frenched-lamb-rack-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Lamb Loin Chops, Australia",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-lamb-loin-chops-australia-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Pork Belly Boneless Sliced",
+          "price": "$4.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-pork-belly-boneless-sliced-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Pork Loin Rib And Loin Chops",
+          "price": "$2.79",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-pork-loin-rib-and-loin-chops-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Pork Loin Top Loin Chop Boneless Thin Cut",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-pork-loin-top-loin-chop-boneless-thin-cut-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Pork Loin Top Loin Chops Boneless",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-pork-loin-top-loin-chops-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Pork Shoulder Country Style Ribs Boneless",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-pork-shoulder-country-style-ribs-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature St. Louis Style Dry Rub Ribs",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-st-louis-style-dry-rub-ribs-300x300.jpg"
+        },
+        {
+          "name": "Swift Boneless Pork Loin",
+          "price": "$1.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-boneless-pork-loin-300x300.jpg"
+        },
+        {
+          "name": "Swift Premium Boneless Pork Shoulder",
+          "price": "$1.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-premium-boneless-pork-shoulder-300x300.jpg"
+        },
+        {
+          "name": "Swift Premium Pork Loin Backribs",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-premium-pork-loin-backribs-300x300.jpg"
+        },
+        {
+          "name": "Swift Premium Pork Loin Tenderloin Whole",
+          "price": "$3.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-premium-pork-loin-tenderloin-whole-300x300.jpg"
+        },
+        {
+          "name": "Swift Premium Pork St. Louis Spare Ribs",
+          "price": "$4.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-premium-pork-st-louis-spare-ribs-300x300.jpg"
+        },
+        {
+          "name": "Swift Rack of Pork Loin Bone In",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/swift-rack-of-pork-loin-bone-in-300x300.jpg"
+        }
+      ]
+    },
+    "Poultry": {
+      "link": "https://costcofdb.com/product-category/meat-seafood/poultry",
+      "products": [
+        {
+          "name": "Butterball Ground Turkey, 4 x 1.7 lbs",
+          "price": "$16.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/butterball-ground-turkey-4-x-1-7-lbs-300x300.jpg"
+        },
+        {
+          "name": "Foster Farms Ground Turkey, 4 x 1.67 lbs",
+          "price": "$18.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/foster-farms-ground-turkey-4-x-1-67-lbs-1-300x300.jpg"
+        },
+        {
+          "name": "Halal Maple Leaf Farms Whole Duck",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/halal-maple-leaf-farms-whole-duck-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature “Air-Chilled” Boneless Skinless Chicken Breast",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-air-chilled-boneless-skinless-chicken-breast-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature “Air-Chilled” Boneless Skinless Chicken Tenderloin",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-air-chilled-boneless-skinless-chicken-tenderloin-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature “Air-Chilled” Boneless Skinless Chicken Thighs",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-air-chilled-boneless-skinless-chicken-thighs-1-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature “Air-Chilled” Chicken Drumsticks",
+          "price": "$0.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-air-chilled-chicken-drumsticks-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature “Air-Chilled” Chicken Party Wings",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-air-chilled-chicken-party-wings-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Antibiotic Free Honey Roasted Sliced Turkey Breast",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-antibiotic-free-honey-roasted-sliced-turkey-breast-2-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Young Chicken",
+          "price": "$0.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-young-chicken-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Garlic Seasoned Drumsticks",
+          "price": "$1.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-garlic-seasoned-drumsticks-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Organic Boneless Skinless Chicken Breasts",
+          "price": "$5.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-organic-boneless-skinless-chicken-breasts-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Organic Boneless Skinless Chicken Tenderloins",
+          "price": "$5.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-organic-boneless-skinless-chicken-tenderloins-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Organic Boneless Skinless Chicken Thighs",
+          "price": "$5.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-organic-boneless-skinless-chicken-thighs-300x300.jpg"
+        },
+        {
+          "name": "Plainville Organic Ground Turkey, 2 x 1.5 lbs",
+          "price": "$17.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/plainville-organic-ground-turkey-2-x-1-5-lbs-300x300.jpg"
+        },
+        {
+          "name": "Simply Smart Organic Grilled Chkn Strips, 2 X 14 oz",
+          "price": "$13.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/simply-smart-organic-grilled-chkn-strips-2-x-14-oz-2-300x300.jpg"
+        }
+      ]
+    },
+    "Prime Beef": {
+      "link": "https://costcofdb.com/product-category/meat-seafood/prime-beef-meat-seafood",
+      "products": [
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Chuck Roast",
+          "price": "$5.49",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-chuck-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Ribeye Cap Steak",
+          "price": "$26.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-ribeye-cap-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Boneless Ribeye Steak",
+          "price": "$19.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-boneless-ribeye-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Brisket",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-brisket-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Chuck Short Ribs Boneless",
+          "price": "$14.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-chuck-short-ribs-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin New York Steak",
+          "price": "$17.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-new-york-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tenderloin Peeled Extreme",
+          "price": "$34.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tenderloin-peeled-extreme-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tenderloin Steak",
+          "price": "$28.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tenderloin-steak-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Top Sirloin Cap Steak Boneless",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-top-sirloin-cap-steak-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Top Sirloin Steak Boneless Cap Off",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-top-sirloin-steak-boneless-cap-off-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Loin Tri Tip Roast",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-loin-tri-tip-roast-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Ribeye Roast, Boneless",
+          "price": "$23.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-ribeye-roast-boneless-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature USDA Prime Beef Ribeye Steak Boneless",
+          "price": "$27.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-usda-prime-beef-ribeye-steak-boneless-300x300.jpg"
+        }
+      ]
+    },
+    "Seafood": {
+      "link": "https://costcofdb.com/product-category/meat-seafood/seafood",
+      "products": [
+        {
+          "name": "Kirkland Signature Farmed U-15 White Shrimp",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-farmed-u-15-white-shrimp-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Farm Raised Catfish Fillet",
+          "price": "$7.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-farm-raised-catfish-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Farmed Atlantic Salmon Fillet",
+          "price": "$9.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-farmed-atlantic-salmon-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Farmed Steelhead Fillet",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-farmed-steelhead-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Farmed Tilapia Fillet",
+          "price": "$4.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-farmed-tilapia-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Farmed Whole Tilapia",
+          "price": "$2.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-farmed-whole-tilapia-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Steelhead Fillet, Farm Raised",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-steelhead-fillet-farm-raised-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Wild Ahi Tuna",
+          "price": "$16.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-wild-ahi-tuna-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Wild Atlantic Cod Fillet",
+          "price": "$8.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-wild-atlantic-cod-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Fresh Wild Pacific Halibut Fillet",
+          "price": "$42.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-fresh-wild-pacific-halibut-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature U-15 Wild Shrimp",
+          "price": "$10.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-u-15-wild-shrimp-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature U-15 Wild Shrimp, 4 lbs",
+          "price": "$58.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-u-15-wild-shrimp-4-lbs-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Whole Cooked Dungeness Crab",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-whole-cooked-dungeness-crab-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Chilean Seabass",
+          "price": "$17.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-chilean-seabass-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Cold Water Lobster Tail",
+          "price": "$34.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-cold-water-lobster-tail-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Cooked Dungeness Crab Section",
+          "price": "$19.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-cooked-dungeness-crab-section-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Cooked Red King Crab Legs and Claws",
+          "price": "$56.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-cooked-red-king-crab-legs-and-claws-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Pacific Cod",
+          "price": "$7.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-pacific-cod-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Prawn U-20, 4 lbs",
+          "price": "$52.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-prawn-u-20-4-lbs-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild Sockeye Salmon, Skin on Boneless Fillet",
+          "price": "$11.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-sockeye-salmon-skin-on-boneless-fillet-300x300.jpg"
+        },
+        {
+          "name": "Kirkland Signature Wild U-15 Scallops, Grade A",
+          "price": "$22.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/kirkland-signature-wild-u-15-scallops-grade-a-300x300.jpg"
+        },
+        {
+          "name": "Wild Cooked Red King Crab Legs and Claws, Frozen, 6 / 9s, Full Case",
+          "price": "$372.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/wild-cooked-red-king-crab-legs-and-claws-frozen-6-9s-full-case-300x300.jpg"
+        },
+        {
+          "name": "Wild Langostino Lobster Tails, 2 Lb Bag",
+          "price": "$28.99",
+          "image": "https://costcofdb.com/wp-content/uploads/2022/01/wild-langostino-lobster-tails-2-lb-bag-300x300.jpg"
+        }
+      ]
+    }
+  }
+}
