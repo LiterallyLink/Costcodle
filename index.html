@@ -7,71 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="howToPlayBtn" class="help-button">?</button>
-
-    <div class="game-container">
-        <div class="header">COSTCODLE</div>
-        <div id="productCard" class="product-card">
-        </div>
-        <div id="gameStatus"></div>
+    <main class="game-container">
+        <header class="header-container">
+            <h1 class="header">COSTCODLE</h1>
+            <button id="howToPlayBtn" class="help-button" aria-label="How to play">?</button>
+        </header>
+        
+        <section id="productCard" class="product-card" aria-live="polite">
+            <!-- Product content will be inserted here -->
+        </section>
+        
+        <section id="gameStatus" aria-live="polite"></section>
+        
         <form id="guessForm" class="guess-form">
+            <label for="guessInput" class="visually-hidden">Enter price guess</label>
             <input 
                 type="number" 
                 id="guessInput" 
                 class="guess-input" 
                 step="0.01" 
+                min="0"
                 placeholder="$0.00" 
                 required
+                aria-label="Price guess"
             >
             <button type="submit" class="guess-button">Guess</button>
         </form>
-        <div id="guessList" class="guess-list">
-        </div>
-    </div>
+        
+        <section id="guessList" class="guess-list" aria-label="Previous guesses">
+            <!-- Guesses will appear here -->
+        </section>
+    </main>
+
     <div id="howToPlayModal" class="modal">
         <div class="modal-content">
-            <div class="modal-header">
+            <header class="modal-header">
                 <h2>HOW TO PLAY</h2>
-            </div>
+            </header>
             <div class="modal-body">
-                <div class="section">
+                <section class="section">
                     <p>Guess the <span class="highlight">COSTCODLE</span> in 6 tries.</p>
                     <ul>
                         <li>Each guess must be a valid price.</li>
                         <li>Incorrect guesses will help guide you to the target price.</li>
                     </ul>
                     <p>If you guess within 5% of the target price, you win!</p>
-                </div>
+                </section>
                 
-                <div class="section">
+                <section class="section">
                     <h3>Examples</h3>
                     <div class="example-guess">
                         <div class="guess-item">
-                            <span>$10.00</span>
-                            <span class="red">↑↑</span>
+                            <span class="guess-value">$10.00</span>
+                            <span class="guess-indicator red">↑↑</span>
                         </div>
                         <p>First guess of $10.00 is low by more than 25% of the target price.</p>
                     </div>
                     
                     <div class="example-guess">
                         <div class="guess-item">
-                            <span>$18.00</span>
-                            <span class="yellow">↓</span>
+                            <span class="guess-value">$18.00</span>
+                            <span class="guess-indicator yellow">↓</span>
                         </div>
                         <p>Next guess of $18.00 is too high but within 25% of the target price.</p>
                     </div>
                     
                     <div class="example-guess">
                         <div class="guess-item">
-                            <span>$16.00</span>
-                            <span class="green">✓</span>
+                            <span class="guess-value">$16.00</span>
+                            <span class="guess-indicator green">✓</span>
                         </div>
                         <p>The guess of $16.00 was within 5% of the target price! You win!</p>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

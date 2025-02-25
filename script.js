@@ -1,65 +1,7 @@
-class Game {
-    constructor() {
-        this.currentProduct = null;
-        this.guesses = [];
-        this.gameWon = false;
-        this.productData = null;
-        this.maxGuesses = 6;
-
-        this.productCard = document.getElementById('productCard');
-        this.guessForm = document.getElementById('guessForm');
-        this.guessInput = document.getElementById('guessInput');
-        this.guessList = document.getElementById('guessList');
-        this.gameStatus = document.getElementById('gameStatus');
-
-        this.loadGameData();
-    }
-
-    async loadGameData() {
-        try {
-            const response = await fetch('./data/costco_complete_database.json');
-            this.productData = await response.json();
-            console.log('Data loaded successfully');
-            this.initGame();
-            this.setupEventListeners();
-        } catch (error) {
-            console.error('Error loading data:', error);
-            this.productCard.innerHTML = '<div>Error loading products. Please try again later.</div>';
-            throw error;
-        }
-    }
-
-    initGame() {
-        const modal = document.getElementById('howToPlayModal');
-        const btn = document.getElementById('howToPlayBtn');
-    
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-    
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        
-        const allProducts = this.getAllProducts();
-
-        if (allProducts.length === 0) {
-            console.log('No Valid Products Found In The Data');
-            return;
-        }
-
-        this.currentProduct = allProducts[Math.floor(Math.random() * allProducts.length)];
-        this.displayProduct();
-        
-        // Add empty slots for remaining guesses
-        this.guessList.innerHTML = '';
-        for (let i = 0; i < this.maxGuesses; i++) {
-            const emptySlot = document.createElement('div');
-            emptySlot.className = 'empty-slot';
-            this.guessList.appendChild(emptySlot);
-        }
+// ProductManager.js - Handles product-related operations
+class ProductManager {
+    constructor(productData) {
+        this.productData = productData;
     }
 
     getAllProducts() {
@@ -73,154 +15,245 @@ class Game {
             .filter(product => product.price && product.name);
     }
 
-    displayProduct() {
-        this.productCard.innerHTML = `
-            <img src="${this.currentProduct.image}" alt="" class="product-image">
-            <div class="product-name">${this.currentProduct.name}</div>
+    getRandomProduct() {
+        const allProducts = this.getAllProducts();
+        if (allProducts.length === 0) {
+            throw new Error('No valid products found in the data');
+        }
+        return allProducts[Math.floor(Math.random() * allProducts.length)];
+    }
+}
+
+// UIManager.js - Handles UI-related operations
+class UIManager {
+    constructor() {
+        this.elements = {
+            productCard: document.getElementById('productCard'),
+            guessForm: document.getElementById('guessForm'),
+            guessInput: document.getElementById('guessInput'),
+            guessList: document.getElementById('guessList'),
+            gameStatus: document.getElementById('gameStatus'),
+            howToPlayModal: document.getElementById('howToPlayModal'),
+            howToPlayBtn: document.getElementById('howToPlayBtn')
+        };
+    }
+
+    displayProduct(product) {
+        this.elements.productCard.innerHTML = `
+            <img src="${product.image}" alt="" class="product-image">
+            <div class="product-name">${product.name}</div>
         `;
     }
 
-    setupEventListeners() {
-        this.guessForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (this.guesses.length < this.maxGuesses && !this.gameWon) {
-                this.handleGuess();
+    setupModalListeners() {
+        this.elements.howToPlayBtn.onclick = () => {
+            this.elements.howToPlayModal.style.display = "block";
+        };
+
+        window.onclick = (event) => {
+            if (event.target == this.elements.howToPlayModal) {
+                this.elements.howToPlayModal.style.display = "none";
             }
-        });
+        };
     }
 
-    handleGuess() {
-        const guessValue = parseFloat(this.guessInput.value);
-        const correctPrice = parseFloat(this.currentProduct.price.replace(/[^0-9.]/g, ''));
+    displayGuess(guess, maxGuesses) {
+        const guessElement = this.createGuessElement(guess);
+        this.updateGuessList(guessElement);
+    }
+
+    createGuessElement(guess) {
+        const element = document.createElement('div');
+        element.className = 'guess-item';
         
+        if (guess.isCorrect) {
+            element.classList.add('correct-guess');
+        } else if (guess.isClose) {
+            element.classList.add('close');
+        } else {
+            element.classList.add('far');
+        }
+
+        const indicator = this.getGuessIndicator(guess);
+        element.innerHTML = `
+            <span class="guess-value">$${guess.value.toFixed(2)}</span>
+            <span class="guess-indicator">${indicator}</span>
+        `;
+
+        return element;
+    }
+
+    getGuessIndicator(guess) {
+        if (guess.isCorrect) return '✓';
+        if (guess.isClose) return guess.isHigh ? '↓' : '↑';
+        return guess.isHigh ? '↓↓' : '↑↑';
+    }
+
+    updateGuessList(guessElement) {
+        const emptySlot = this.elements.guessList.querySelector('.empty-slot');
+        if (emptySlot) {
+            emptySlot.remove();
+        }
+
+        if (this.elements.guessList.firstChild) {
+            this.elements.guessList.insertBefore(guessElement, this.elements.guessList.firstChild);
+        } else {
+            this.elements.guessList.appendChild(guessElement);
+        }
+    }
+
+    displayGameStatus(status) {
+        this.elements.gameStatus.innerHTML = status;
+        this.updateInputState(false);
+    }
+
+    resetUI(maxGuesses) {
+        this.elements.guesses = [];
+        this.elements.guessList.innerHTML = '';
+        this.elements.gameStatus.innerHTML = '';
+        this.elements.guessInput.value = '';
+        this.updateInputState(true);
+        this.createEmptySlots(maxGuesses);
+    }
+
+    updateInputState(enabled) {
+        this.elements.guessInput.disabled = !enabled;
+        this.elements.guessInput.classList.toggle('disabled', !enabled);
+        
+        const submitButton = this.elements.guessForm.querySelector('button[type="submit"]');
+        if (submitButton) {
+            submitButton.disabled = !enabled;
+            submitButton.classList.toggle('disabled', !enabled);
+        }
+    }
+
+    createEmptySlots(maxGuesses) {
+        for (let i = 0; i < maxGuesses; i++) {
+            const emptySlot = document.createElement('div');
+            emptySlot.className = 'empty-slot';
+            this.elements.guessList.appendChild(emptySlot);
+        }
+    }
+}
+
+// GameState.js - Handles game state and logic
+class GameState {
+    constructor(maxGuesses) {
+        this.maxGuesses = maxGuesses;
+        this.reset();
+    }
+
+    reset() {
+        this.currentProduct = null;
+        this.guesses = [];
+        this.gameWon = false;
+    }
+
+    evaluateGuess(guessValue) {
+        const correctPrice = parseFloat(this.currentProduct.price.replace(/[^0-9.]/g, ''));
         const percentDiff = ((guessValue - correctPrice) / correctPrice) * 100;
         
-        const guess = {
+        return {
             value: guessValue,
             isCorrect: Math.abs(percentDiff) <= 5,
             isHigh: guessValue > correctPrice,
             isClose: Math.abs(percentDiff) <= 25
         };
-
-        this.guesses.push(guess);
-        this.displayGuess(guess);
-        this.guessInput.value = '';
-
-        if (guess.isCorrect) {
-            this.handleWin();
-        } else if (this.guesses.length >= this.maxGuesses) {
-            this.handleLoss();
-        }
     }
 
-    displayGuess(guess) {
-        const guessElement = document.createElement('div');
-        guessElement.className = 'guess-item';
-        
-        if (guess.isCorrect) {
-            guessElement.classList.add('correct-guess');
-        } else if (guess.isClose) {
-            guessElement.classList.add('close');
-        } else {
-            guessElement.classList.add('far');
-        }
-
-        let indicator;
-        if (guess.isCorrect) {
-            indicator = '✓';
-        } else {
-            if (guess.isClose) {
-                indicator = guess.isHigh ? '↓' : '↑';
-            } else {
-                indicator = guess.isHigh ? '↓↓' : '↑↑';
-            }
-        }
-
-        guessElement.innerHTML = `
-            <span>$${guess.value.toFixed(2)}</span>
-            <span>${indicator}</span>
-        `;
-
-        // Remove one empty slot if it exists
-        const emptySlot = this.guessList.querySelector('.empty-slot');
-        if (emptySlot) {
-            emptySlot.remove();
-        }
-
-        // Insert new guess at the beginning of the list
-        if (this.guessList.firstChild) {
-            this.guessList.insertBefore(guessElement, this.guessList.firstChild);
-        } else {
-            this.guessList.appendChild(guessElement);
-        }
+    isGameOver() {
+        return this.gameWon || this.guesses.length >= this.maxGuesses;
     }
 
-    handleWin() {
-        this.gameWon = true;
-        this.gameStatus.innerHTML = `
-            <div class="game-status">
-                <div class="game-status-text">You win! Congratulations! 🎉</div>
-                <div class="game-status-text">The price was ${this.currentProduct.price}</div>
-                <div class="game-status-text">You got it in ${this.guesses.length}/${this.maxGuesses} tries!</div>
-                <button onclick="game.nextItem()" class="next-button">Next Item</button>
-            </div>
-        `;
-        
-        this.guessInput.disabled = true;
-        this.guessInput.classList.add('disabled');
-        const submitButton = this.guessForm.querySelector('button[type="submit"]');
-        if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.classList.add('disabled');
+    getGameStatus() {
+        if (this.gameWon) {
+            return `
+                <div class="game-status">
+                    <div class="game-status-text">You win! Congratulations! 🎉</div>
+                    <div class="game-status-text">The price was ${this.currentProduct.price}</div>
+                    <div class="game-status-text">You got it in ${this.guesses.length}/${this.maxGuesses} tries!</div>
+                    <button onclick="game.nextItem()" class="next-button">Next Item</button>
+                </div>
+            `;
         }
-    }
-    
-    handleLoss() {
-        this.gameStatus.innerHTML = `
+        return `
             <div class="game-status">
                 <div class="game-status-text">Game Over!</div>
                 <div class="game-status-text">The price was ${this.currentProduct.price}</div>
                 <button onclick="game.nextItem()" class="next-button">Next Item</button>
             </div>
         `;
+    }
+}
+
+// Game.js - Main game controller
+class Game {
+    constructor() {
+        this.maxGuesses = 6;
+        this.ui = new UIManager();
+        this.gameState = new GameState(this.maxGuesses);
+        this.productManager = null;
+
+        this.loadGameData();
+    }
+
+    async loadGameData() {
+        try {
+            const response = await fetch('./data/costco_complete_database.json');
+            const productData = await response.json();
+            console.log('Data loaded successfully');
+            
+            this.productManager = new ProductManager(productData);
+            this.initGame();
+            this.setupEventListeners();
+        } catch (error) {
+            console.error('Error loading data:', error);
+            this.ui.elements.productCard.innerHTML = '<div>Error loading products. Please try again later.</div>';
+            throw error;
+        }
+    }
+
+    initGame() {
+        this.ui.setupModalListeners();
+        this.gameState.currentProduct = this.productManager.getRandomProduct();
+        this.ui.displayProduct(this.gameState.currentProduct);
+        this.ui.createEmptySlots(this.maxGuesses);
+    }
+
+    setupEventListeners() {
+        this.ui.elements.guessForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!this.gameState.isGameOver()) {
+                this.handleGuess();
+            }
+        });
+    }
+
+    handleGuess() {
+        const guessValue = parseFloat(this.ui.elements.guessInput.value);
+        const guess = this.gameState.evaluateGuess(guessValue);
         
-        this.guessInput.disabled = true;
-        this.guessInput.classList.add('disabled');
-        const submitButton = this.guessForm.querySelector('button[type="submit"]');
-        if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.classList.add('disabled');
+        this.gameState.guesses.push(guess);
+        this.ui.displayGuess(guess, this.maxGuesses);
+        this.ui.elements.guessInput.value = '';
+
+        if (guess.isCorrect) {
+            this.gameState.gameWon = true;
+            this.ui.displayGameStatus(this.gameState.getGameStatus());
+        } else if (this.gameState.isGameOver()) {
+            this.ui.displayGameStatus(this.gameState.getGameStatus());
         }
     }
 
     nextItem() {
-        this.guesses = [];
-        this.gameWon = false;
-        this.guessList.innerHTML = '';
-        this.gameStatus.innerHTML = '';
-        
-        this.guessInput.disabled = false;
-        this.guessInput.classList.remove('disabled');
-        this.guessInput.value = '';
-        const submitButton = this.guessForm.querySelector('button[type="submit"]');
-        if (submitButton) {
-            submitButton.disabled = false;
-            submitButton.classList.remove('disabled');
-        }
-
-        const allProducts = this.getAllProducts();
-        this.currentProduct = allProducts[Math.floor(Math.random() * allProducts.length)];
-        this.displayProduct();
-        
-        // Reset empty slots
-        for (let i = 0; i < this.maxGuesses; i++) {
-            const emptySlot = document.createElement('div');
-            emptySlot.className = 'empty-slot';
-            this.guessList.appendChild(emptySlot);
-        }
+        this.gameState.reset();
+        this.ui.resetUI(this.maxGuesses);
+        this.gameState.currentProduct = this.productManager.getRandomProduct();
+        this.ui.displayProduct(this.gameState.currentProduct);
     }
 }
 
+// Initialize game
 let game;
 document.addEventListener('DOMContentLoaded', () => {
     game = new Game();
